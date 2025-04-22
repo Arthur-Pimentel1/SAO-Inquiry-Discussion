@@ -75,13 +75,24 @@ nav ul li a.active {
 
 /* Center Content on All Pages */
 .content {
-    padding: 40px;
+    padding: 40px 40px 60px;
     max-width: 750px;
     margin: auto;
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 170, 255, 0.25);
+    border: 2px solid #00aaff;
     text-align: center; /* Ensures text inside is centered */
+}
+
+.content p {
+    background: rgba(0, 170, 255, 0.08);
+    padding: 18px 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 170, 255, 0.4);
+    box-shadow: 0 4px 12px rgba(0, 170, 255, 0.15);
+    text-align: left;
 }
 
 /* Center Footer */
@@ -214,5 +225,17 @@ footer {
         bottom: 20px;
         right: 50%;
         transform: translateX(50%);
+    }
+    .language-toggle img {
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        transition: transform 0.2s ease-in-out, opacity 0.2s;
+    }
+    
+    .language-toggle img.active-language {
+        border: 2px solid #007bff; /* Highlights active language */
+        transform: scale(1.1);
+        opacity: 0.8;
     }
 }
